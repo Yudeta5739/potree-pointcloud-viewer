@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>colored-pointcloud</title>
+    <script src="libs/potree/potree.js"></script>
+    <link rel="stylesheet" href="libs/potree/potree.css" />
+</head>
+<body>
+    <script>
+        Potree.loadPointCloud("pointclouds/colored-pointcloud/metadata.json", "colored-pointcloud", e => {
+            viewer.scene.addPointCloud(e.pointcloud);
+        });
+    </script>
+</body>
+</html>
